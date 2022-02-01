@@ -1,0 +1,25 @@
+{
+  "name": "grab-doc",
+  "version": "0.1.0",
+  "description": "TS transformer for getting doc comments as strings",
+  "main": "index.js",
+  "repository": "https://github.com/ludanin/grab-doc",
+  "author": "ludanin",
+  "license": "MIT",
+  "private": false,
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "transformer.js",
+    "transformer.ts"
+  ],
+  "scripts": {
+    "prebuild": "rm -rf transformer.js",
+    "build": "tsc",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.22",
+    "typescript": "^4.5.5"
+  }
+}
